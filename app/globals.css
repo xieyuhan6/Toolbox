@@ -23,4 +23,187 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Caveat font style */
+.caveat {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* note-input样式 */
+.note-input {
+  display: block;
+  width: 100%; /* 让输入框占满容器宽度 */
+  padding: 10px; /* 给输入框内加一些内边距 */
+  margin-bottom: 10px; /* 输入框之间的间距 */
+  border: 1px solid #ddd; /* 边框颜色 */
+  border-radius: 8px; /* 圆角边框 */
+  font-size: 16px; /* 字体大小 */
+  font-family: Arial, sans-serif; /* 设置字体 */
+  box-sizing: border-box; /* 包括 padding 和 border 在内的总宽度 */
+}
+
+.note-input:focus {
+  border-color: #3498db; /* 聚焦时边框颜色变为蓝色 */
+  outline: none; /* 去除默认的聚焦轮廓 */
+}
+
+.note-input::placeholder {
+  color: #888; /* 占位符的颜色 */
+  font-style: italic; /* 占位符字体样式 */
+}
+
+/* Note Card 样式 */
+.note-card {
+  background-color: #fff;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.note-card p {
+  font-size: 18px;
+  margin: 8px 0;
+  word-wrap: break-word;  /* 保证长文本换行 */
+}
+
+.note-card .btn-primary {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.note-card .btn-primary:hover {
+  background-color: #45a049;
+}
+
+/* Header / Navigation Bar 样式 */
+.header {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Footer 样式 */
+.footer {
+  width: 100%;
+  background-color: #f3f4f6; /* Tailwind 的 gray-100 近似色 */
+  color: #374151; /* gray-700 */
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #e5e7eb; /* gray-200 */
+  margin-top: 32px;
+}
+
+/* Container 样式 */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto; /* 水平居中 */
+  padding: 20px;
+}
+
+/* 用于其他通用布局的样式 */
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+/* Main page container */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+  padding: 0 20px;
+}
+
+/* Main page title */
+.main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* Button container to space out buttons */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+/* Styling for buttons */
+.main-button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease;
+  width: 200px; /* Control button width */
+}
+
+.main-button:hover {
+  background-color: #45a049;
+  transform: translateY(-4px); /* Subtle hover effect */
+}
+
+.main-button:active {
+  transform: translateY(2px); /* Active button press effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .main-button {
+    width: 80%;
+  }
 }
