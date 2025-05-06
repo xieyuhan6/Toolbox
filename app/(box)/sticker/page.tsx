@@ -1,7 +1,5 @@
 "use client";
-import { Footer } from "../components/Footer";
 import { InputSection } from "./components/InputSection";
-import { Nav } from "../components/Nav";
 import { NoteSection } from "./components/NoteSection";
 import { useState } from "react"
 
@@ -35,7 +33,6 @@ export default function App() {
   };
   return (
     <div className="App">
- 
       <InputSection onInput={onInput} input={input} addThing={addThing} />
       <NoteSection things={things} delThing={delThing} />
     </div>
