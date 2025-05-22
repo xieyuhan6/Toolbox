@@ -1,6 +1,6 @@
 "use client"
-import { Button } from '@/app/(box)/finance-manager/components/ui/button';
-import { Input } from '@/app/(box)/finance-manager/components/ui/input';
+import { Button } from '@/app/(frontend)/(box)/finance-manager/components/ui/button';
+import { Input } from '@/app/(frontend)/(box)/finance-manager/components/ui/input';
 import React, { useEffect, useState } from 'react'
 type Transaction = {
   id: number;
