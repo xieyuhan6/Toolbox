@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 
-const page = () => {
+const Page = () => {
   const [isLoading,setLoading]=useState(false)
   const onGenerate=()=>{
     setLoading(true)
@@ -39,4 +39,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
