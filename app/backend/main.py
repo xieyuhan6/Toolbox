@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from .db import SessionLocal, engine
-from models import Base, Transaction as DBTransaction
+from .models import Base, Transaction as DBTransaction
 from datetime import date
 
 app = FastAPI()
