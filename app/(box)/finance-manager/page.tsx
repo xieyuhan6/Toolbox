@@ -9,7 +9,7 @@ type Transaction = {
   date: string;
 };
 
-export const Page = () => {
+const Page = () => {
   const [input,setInput]=useState({
     description:"",
     amount:"",
