@@ -1,7 +1,8 @@
 "use client"
-import { eggTime } from '@/constants'
-import React, { useState } from 'react'
+// import { eggTime } from '@/constants'
+import React from 'react'
 import StopButton from './components/StopButton'
+import Image from 'next/image'
 
 const page = () => {
   
@@ -12,7 +13,7 @@ const page = () => {
         <StopButton/>
       </div>
     <div className='ml-auto'>
-      <img src="egg.jpg" alt='eggs'/>
+      <Image src="egg.jpg" alt='eggs'/>
       <p>source:https://www.egginfo.co.uk/recipes/how-boil-egg</p>
     </div>
     </section>
