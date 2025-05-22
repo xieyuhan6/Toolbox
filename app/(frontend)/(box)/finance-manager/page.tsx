@@ -17,7 +17,7 @@ const Page = () => {
   })
   const [list,setList]=useState<Transaction[]>([])
   useEffect(()=>{
-    fetch("http://localhost:8000/all")
+    fetch("https://toolbox-weam.onrender.com/all")
       .then(res=>res.json())
       .then(data=>setList(data))
       .catch(console.error)
@@ -32,7 +32,7 @@ const Page = () => {
   const onSubmit=async(e:React.FormEvent)=>{
     e.preventDefault()
     try{
-      const res=await fetch("http://localhost:8000/add",{
+      const res=await fetch("https://toolbox-weam.onrender.com/add",{
           method:"POST",
           headers:{
             "content-type": "application/json"
@@ -49,7 +49,7 @@ const Page = () => {
     }
   
   const onDelete=async(id:number)=>{
-    await fetch(`http://localhost:8000/delete/${id}`,{
+    await fetch(`https://toolbox-weam.onrender.com/delete/${id}`,{
       method:"DELETE",
     })
       setList((prev)=>prev.filter(li=>li.id!==id))
