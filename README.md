@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧰 **Toolbox**
 
-## Getting Started
+A collection of smart, focused web utilities built with **Next.js** and **Tailwind CSS**, designed to simplify everyday tasks. All apps follow a modular UI using **shadcn/ui** components, ensuring a consistent, elegant user experience.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🔧 **Included Tools**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### ⏲️ **Egg Timer**
+A simple yet stylish countdown timer for productivity and reminders.  
+Built with:
+- `Next.js`
+- `Tailwind CSS`
+- `shadcn/ui`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🗒️ **Sticker Board**
+A virtual sticky note board to jot down quick ideas and todos.  
+Built with:
+- `Next.js`
+- `Tailwind CSS`
+- `shadcn/ui`
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### 🧠 **AI Blog Generator (from YouTube)**
+Generate blog articles by analyzing content from YouTube videos.  
+> 🛠️ **Status**: Frontend completed, backend in progress  
+Planned backend stack:
+- `Python`, `MongoDB` (via `Jongo`)
+- `Next.js` frontend with dynamic input UI
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 💰 **Expense Tracker (记账系统)**
+A personal finance tracker with clean charts, logs, and budget management.  
+Frontend:
+- `Next.js`
+- `Tailwind CSS`
+- `shadcn/ui`  
+Backend:
+- `FastAPI`
+- `PostgreSQL`
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧱 **Shared Stack**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All tools are built with:
+
+- 🌐 **Next.js** — SSR-ready frontend framework
+- 🎨 **Tailwind CSS** — Utility-first CSS
+- 🧩 **shadcn/ui** — Modern UI component library
+
+---
+
+## 🚧 **Planned Enhancements**
+
+- [ ] Full backend integration for AI blog generator
+- [ ] Auth system across tools
+- [ ] Dark mode toggle
+- [ ] Optional export/import for sticker board and expense data
+
+---
+
+## 📎 **License**
+
+MIT © [Your Name or Organization]
+
