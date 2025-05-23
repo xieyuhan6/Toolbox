@@ -64,7 +64,4 @@ All tools are built with:
 
 ---
 
-## 📎 **License**
-
-MIT © [Your Name or Organization]
 
